@@ -47,5 +47,4 @@ const handleInput = (input) => {
   }
 };
 
-
 showMenu();
