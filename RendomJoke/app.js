@@ -5,7 +5,7 @@ const getJoke = async () => {
   const url = "https://official-joke-api.appspot.com/random_joke";
   try {
     const response = await fetch(url);
-    if (!response.ok) {
+    if (!response.ok) { 
       throw new Error(`HTTP Error ${response.status}`);
     }
 
