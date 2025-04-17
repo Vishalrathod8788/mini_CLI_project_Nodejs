@@ -19,7 +19,7 @@ const fileHandler = (input) => {
   if (input === "1") {
     rl.question("Enter File Name: ", (fileName) => {
       rl.question("Enter File Content: ", (fileContent) => {
-        fs.writeFile(`${fileName}.txt`, fileContent, (err) => {
+        fs.writeFile(fileName, fileContent, (err) => {
           if (err) {
             console.log("Error:", err);
           } else {
@@ -31,7 +31,7 @@ const fileHandler = (input) => {
     });
   } else if (input === "2") {
     rl.question("Enter File Name: ", (fileName) => {
-      fs.readFile(`${fileName}.txt`, "utf-8", (err, data) => {
+      fs.readFile(fileName, "utf-8", (err, data) => {
         if (err) {
           console.log("Error:", err);
         } else {
@@ -42,7 +42,7 @@ const fileHandler = (input) => {
     });
   } else if (input === "3") {
     rl.question("Enter File Name: ", (fileName) => {
-      fs.unlink(`${fileName}.txt`, (err) => {
+      fs.unlink(fileName, (err) => {
         if (err) {
           console.log("Error:", err);
         } else {
