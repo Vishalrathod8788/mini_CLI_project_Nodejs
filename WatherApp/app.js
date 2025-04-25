@@ -24,6 +24,11 @@ Temperature: ${data.main.temp}°C
 Feels like: ${data.main.feels_like}°C
 Humidity: ${data.main.humidity}%
 Weather: ${data.weather[0].description}
+wind speed: ${data.wind.speed * 3.6} km/h
+Visibility: ${data.visibility / 1000} km
+
+sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}
+sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}
     `);
   } catch (error) {
     console.error(`Error: ${error.message}`);
