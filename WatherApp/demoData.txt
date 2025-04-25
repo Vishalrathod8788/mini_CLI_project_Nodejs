@@ -1,0 +1,145 @@
+// // Get the current weather data
+// async function getWeatherData() {
+//   const response = await fetch(URL);
+//   const data = await response.json();
+//   return data;
+// }
+
+// // Display the weather data
+// function displayWeatherData(data) {
+//   const weatherContainer = document.getElementById("weather");
+//   weatherContainer.innerHTML = `
+//     <h2>Current Weather</h2>
+//     <p>Temperature: ${data.current_weather.temperature}°C</p>
+//     <p>Wind Speed: ${data.current_weather.windspeed} km/h</p>
+//     <p>Weather Code: ${data.current_weather.weathercode}</p>
+//   `;
+// }
+
+// // Handle errors
+// function handleError(error) {
+//   const weatherContainer = document.getElementById("weather");
+//   weatherContainer.innerHTML = `<p>Error: ${error.message}</p>`;
+// }
+
+// // Initialize the application
+// function init() {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// }
+
+// // Call the init function to start the application
+// init();
+
+// // Add event listener to the button
+// const button = document.getElementById("get-weather");
+// button.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the input field
+// const input = document.getElementById("location");
+// input.addEventListener("input", () => {
+//   const location = input.value;
+//   URL = `https://api.open-meteo.com/v1/forecast?latitude=${location}&longitude=${location}&current_weather=true`;
+// });
+
+// // Add event listener to the form
+// const form = document.getElementById("location-form");
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const location = input.value;
+//   URL = `https://api.open-meteo.com/v1/forecast?latitude=${location}&longitude=${location}&current_weather=true`;
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the window
+// window.addEventListener("load", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the document
+// document.addEventListener("DOMContentLoaded", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the body
+// const body = document.querySelector("body");
+// body.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the html
+// const html = document.querySelector("html");
+// html.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the head
+// const head = document.querySelector("head");
+// head.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the footer
+// const footer = document.querySelector("footer");
+// footer.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the nav
+// const nav = document.querySelector("nav");
+// nav.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the main
+// const main = document.querySelector("main");
+// main.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the section
+// const section = document.querySelector("section");
+// section.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the article
+// const article = document.querySelector("article");
+// article.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
+
+// // Add event listener to the aside
+// const aside = document.querySelector("aside");
+// aside.addEventListener("click", () => {
+//   getWeatherData()
+//     .then((data) => displayWeatherData(data))
+//     .catch((error) => handleError(error));
+// });
